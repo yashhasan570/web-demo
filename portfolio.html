@@ -80,6 +80,10 @@ footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-s
 footer a{color:var(--ink);text-decoration:none;font-weight:600}
 footer a:hover{color:var(--accent)}
 
+/* ABOUT */
+.aboutgrid{display:grid;grid-template-columns:300px 1fr;gap:40px;align-items:center}
+.portrait{width:100%;border-radius:20px;object-fit:cover;aspect-ratio:4/5;box-shadow:0 14px 40px rgba(15,23,42,.18)}
+@media(max-width:720px){.aboutgrid{grid-template-columns:1fr}.portrait{max-width:340px;margin:0 auto}}
 @media(max-width:720px){
 .work,.steps,.price{grid-template-columns:1fr}
 .hero{padding:72px 0 64px}
@@ -107,6 +111,18 @@ section{padding:56px 0}
 </div>
 
 <div class="wrap">
+
+<section id="about">
+  <div class="aboutgrid">
+    <img class="portrait" src="khalid.jpg" alt="Md. Khalid Hasan">
+    <div>
+      <div class="kicker">About</div>
+      <h2>The person behind the sites</h2>
+      <p class="lead" style="margin-bottom:12px">I've been building for the web for years &mdash; from media apps to business sites. I keep it simple: one clear page, real content, phone-first layout, and a site you can actually update.</p>
+      <p class="lead" style="margin-bottom:0">You get a working site in 3&ndash;5 days, not a month of meetings.</p>
+    </div>
+  </div>
+</section>
 
 <section id="work">
   <div class="kicker">Selected work</div>
