@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="bn">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>সিরিয়াল নিন — সুনীতি ডেন্টাল কেয়ার</title>
+<title>Book an appointment — Suniti Dental Care</title>
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Hind Siliguri',sans-serif;color:#173035;line-height:1.7;background:#f4fbfb;min-height:100vh}
+body{font-family:'Inter',sans-serif;color:#173035;line-height:1.7;background:#f4fbfb;min-height:100vh}
 .top{background:linear-gradient(135deg,#0b5563,#12888f);color:#fff;padding:36px 24px;text-align:center}
 .top h1{font-size:1.6rem}
 .top p{opacity:.9;font-size:.92rem;margin-top:6px}
@@ -40,60 +40,60 @@ select{width:100%;background:#fff;border:1px solid #b8dcd9;border-radius:10px;pa
 </style>
 </head>
 <body>
-<div class="top"><h1>অনলাইনে সিরিয়াল নিন</h1><p>সুনীতি ডেন্টাল কেয়ার · ধানমন্ডি ২৭, ঢাকা · ০১৭০০-০০০০০০</p></div>
+<div class="top"><h1>Book an appointment online</h1><p>Suniti Dental Care &middot; Dhanmondi 27, Dhaka &middot; 01700-000000</p></div>
 <div class="wrap">
 <div id="s1" class="step on">
-<div class="lbl">কোন সেবার জন্য?</div>
+<div class="lbl">Which service?</div>
 <select id="svc">
-<option>ডেন্টাল চেকআপ</option>
-<option>স্কেলিং ও পলিশ</option>
-<option>ফিলিং</option>
-<option>রুট ক্যানেল</option>
-<option>টুথ এক্সট্র্যাকশন</option>
-<option>ক্রাউন ও ব্রিজ</option>
-<option>ব্রেসেস কনসালটেশন</option>
-<option>হোয়াইটেনিং</option>
+<option>Dental checkup</option>
+<option>Scaling &amp; polishing</option>
+<option>Filling</option>
+<option>Root canal</option>
+<option>Tooth extraction</option>
+<option>Crown &amp; bridge</option>
+<option>Braces consultation</option>
+<option>Whitening</option>
 </select>
-<div class="lbl">কোন দিন?</div>
+<div class="lbl">Which day?</div>
 <input type="date" id="date">
-<div class="nav"><button class="btn" onclick="go(2)">পরবর্তী</button></div>
+<div class="nav"><button class="btn" onclick="go(2)">Next</button></div>
 </div>
 <div id="s2" class="step">
-<div class="lbl">সিরিয়ালের সময় বেছে নিন</div>
+<div class="lbl">Pick a time</div>
 <div class="chips" id="slots"></div>
-<div class="nav"><button class="btn ghost" onclick="go(1)">পেছনে</button> <button class="btn" onclick="go(3)" id="s2next" disabled style="opacity:.4">পরবর্তী</button></div>
+<div class="nav"><button class="btn ghost" onclick="go(1)">Back</button> <button class="btn" onclick="go(3)" id="s2next" disabled style="opacity:.4">Next</button></div>
 </div>
 <div id="s3" class="step">
-<div class="lbl">আপনার তথ্য</div>
-<input id="nm" placeholder="রোগীর নাম">
+<div class="lbl">Your details</div>
+<input id="nm" placeholder="Patient name">
 <div class="lbl" style="margin-top:12px"></div>
-<div class="row2" style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><input id="ph" placeholder="মোবাইল নম্বর"><input id="ag" placeholder="বয়স"></div>
-<div class="lbl">সমস্যাটা কী? (ঐচ্ছিক)</div>
-<textarea id="rq" placeholder="যেমন: উপরের পাটি দাঁতে ঠান্ডায় ব্যথা…"></textarea>
+<div class="row2" style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><input id="ph" placeholder="Mobile number"><input id="ag" placeholder="Age"></div>
+<div class="lbl">What's the problem? (optional)</div>
+<textarea id="rq" placeholder="e.g. Upper molar aches with cold…"></textarea>
 <div class="recap" id="recap"></div>
-<div class="nav"><button class="btn ghost" onclick="go(2)">পেছনে</button> <button class="btn" onclick="finish()">সিরিয়াল নিশ্চিত করুন</button></div>
-<div class="note">ডেমো সিরিয়াল — এখানে নমুনা ডেটা ব্যবহার হচ্ছে, চেম্বারের আসল সিস্টেম নয়।</div>
+<div class="nav"><button class="btn ghost" onclick="go(2)">Back</button> <button class="btn" onclick="finish()">Confirm appointment</button></div>
+<div class="note">Demo appointment &mdash; sample data only, not the clinic's live system.</div>
 </div>
 <div id="s4" class="step done">
 <div class="ok">✓</div>
-<h2>সিরিয়াল নিশ্চিত হয়েছে</h2>
+<h2>Appointment confirmed</h2>
 <p id="dn" style="color:#173035"></p>
 <div class="code" id="cd"></div>
-<p class="small">কনফার্মেশন SMS পাঠানো হয়েছে। আগে পৌঁছালে লেভেল ৩-এ অপেক্ষা করুন, সিরিয়াল অনুযায়ী ডাকা হবে।</p>
+<p class="small">A confirmation SMS has been sent. If you arrive early, wait on Level 3 &mdash; patients are called in serial order.</p>
 </div>
 </div>
 <script>
-const bn=s=>String(s).replace(/\d/g,d=>'০১২৩৪৫৬৭৮৯'[d]);
 const el=id=>document.getElementById(id);
-let st={t:null};
+let st={t:null,d:null};
 function go(n){for(let i=1;i<=4;i++)el('s'+i).classList.remove('on');el('s'+n).classList.add('on');if(n==2)renderSlots();if(n==3)recap()}
 el('date').min=new Date().toISOString().slice(0,10);
 el('date').onchange=()=>{};
 function closed(w){return w==4||w==5}
 function isFull(d,t){const seed=[...d].reduce((a,c)=>a+c.charCodeAt(0),0)+t.length;return (seed*7+t.charCodeAt(0))%8<1.5}
-function renderSlots(){const ds=st.d=el('date').value||new Date().toISOString().slice(0,10);const w=new Date(ds+'T12:00:00').getDay();el('slots').innerHTML='';el('s2next').disabled=true;el('s2next').style.opacity=.4;if(closed(w)){const c=document.createElement('div');c.className='small';c.textContent='বৃহস্পতি ও শুক্রবার চেম্বার বন্ধ — অন্য দিন বেছে নিন।';el('slots').appendChild(c);return}for(let h=16;h<=20.5;h+=.5){const hh=Math.floor(h),t=bn(hh>12?hh-12:hh)+':'+(h%1?'৩০':'০০')+' '+(h<19?'বিকেল':'রাত');const f=isFull(ds,String(hh));const c=document.createElement('div');c.className='chip'+(f?' full':'');c.textContent=t;if(!f)c.onclick=()=>{document.querySelectorAll('#slots .chip').forEach(x=>x.classList.remove('sel'));c.classList.add('sel');st.t=t;el('s2next').disabled=false;el('s2next').style.opacity=1};el('slots').appendChild(c)}}
-function recap(){const d=new Date(st.d+'T12:00:00');const days=['রবিবার','সোমবার','মঙ্গলবার','বুধবার','বৃহস্পতিবার','শুক্রবার','শনিবার'];el('recap').innerHTML='<b>'+el('svc').value+'</b> · '+days[d.getDay()]+' · <b>'+st.t+'</b>'}
-function finish(){const n=el('nm').value.trim(),p=el('ph').value.trim();if(!n||!p){alert('রোগীর নাম আর মোবাইল নম্বর দিন।');return}const d=new Date(st.d+'T12:00:00');const days=['রবিবার','সোমবার','মঙ্গলবার','বুধবার','বৃহস্পতিবার','শুক্রবার','শনিবার'];const cd='SDC-'+Math.random().toString(36).slice(2,6).toUpperCase();el('dn').textContent=n+' — '+el('svc').value+', '+days[d.getDay()]+', '+st.t;el('cd').textContent=cd;go(4)}
+function label(h){const hh=h>12?h-12:h;const mm=h%1?':30':':00';return hh+mm+' PM'}
+function renderSlots(){const ds=st.d=el('date').value||new Date().toISOString().slice(0,10);const w=new Date(ds+'T12:00:00').getDay();el('slots').innerHTML='';el('s2next').disabled=true;el('s2next').style.opacity=.4;if(closed(w)){const c=document.createElement('div');c.className='small';c.textContent='The practice is closed Thursday and Friday — pick another day.';el('slots').appendChild(c);return}for(let h=16;h<=20.5;h+=.5){const t=label(h);const f=isFull(ds,String(Math.floor(h)));const c=document.createElement('div');c.className='chip'+(f?' full':'');c.textContent=t;if(!f)c.onclick=()=>{document.querySelectorAll('#slots .chip').forEach(x=>x.classList.remove('sel'));c.classList.add('sel');st.t=t;el('s2next').disabled=false;el('s2next').style.opacity=1};el('slots').appendChild(c)}}
+function recap(){const d=new Date(st.d+'T12:00:00');const days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];el('recap').innerHTML='<b>'+el('svc').value+'</b> &middot; '+days[d.getDay()]+' &middot; <b>'+st.t+'</b>'}
+function finish(){const n=el('nm').value.trim(),p=el('ph').value.trim();if(!n||!p){alert('Please add the patient name and mobile number.');return}const d=new Date(st.d+'T12:00:00');const days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];const cd='SDC-'+Math.random().toString(36).slice(2,6).toUpperCase();el('dn').textContent=n+' — '+el('svc').value+', '+days[d.getDay()]+', '+st.t;el('cd').textContent=cd;go(4)}
 </script>
 </body>
 </html>

@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="bn">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>টেবিল বুক করুন — পাহাড়পুর বিরিয়ানি হাউস</title>
+<title>Book a table — Paharpur Biryani House</title>
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Hind Siliguri',sans-serif;color:#2a1a12;line-height:1.7;background:#fff8f3;min-height:100vh}
+body{font-family:'Inter',sans-serif;color:#2a1a12;line-height:1.7;background:#fff8f3;min-height:100vh}
 .top{background:linear-gradient(135deg,#5e1414,#a02c24);color:#fff;padding:36px 24px;text-align:center}
 .top h1{font-size:1.6rem}
 .top p{opacity:.9;font-size:.92rem;margin-top:6px}
@@ -41,56 +41,56 @@ select{width:100%;background:#fff;border:1px solid #e8c8b8;border-radius:10px;pa
 </style>
 </head>
 <body>
-<div class="top"><h1>টেবিল বুক / অর্ডার করুন</h1><p>পাহাড়পুর বিরিয়ানি হাউস · মিরপুর ১০, ঢাকা · ০১৭০০-০০০০০০</p></div>
+<div class="top"><h1>Book a table / Order</h1><p>Paharpur Biryani House &middot; Mirpur 10, Dhaka &middot; 01700-000000</p></div>
 <div class="wrap">
 <div id="s1" class="step on">
-<div class="lbl">কী করতে চান?</div>
+<div class="lbl">What would you like to do?</div>
 <div class="chips" id="mode">
-<div class="chip sel" data-v="টেবিল বুক">টেবিল বুক</div>
-<div class="chip" data-v="পিকআপ অর্ডার">পিকআপ অর্ডার</div>
-<div class="chip" data-v="হোম ডেলিভারি">হোম ডেলিভারি</div>
+<div class="chip sel" data-v="Book a table">Book a table</div>
+<div class="chip" data-v="Pickup order">Pickup order</div>
+<div class="chip" data-v="Home delivery">Home delivery</div>
 </div>
-<div class="lbl">কতজন? (টেবিলের জন্য)</div>
+<div class="lbl">How many? (for a table)</div>
 <div class="chips" id="party"></div>
-<div class="lbl">কোন দিন?</div>
+<div class="lbl">Which day?</div>
 <input type="date" id="date">
-<div class="nav"><button class="btn" onclick="go(2)">পরবর্তী</button></div>
+<div class="nav"><button class="btn" onclick="go(2)">Next</button></div>
 </div>
 <div id="s2" class="step">
-<div class="lbl">সময় বেছে নিন</div>
+<div class="lbl">Pick a time</div>
 <div class="chips" id="slots"></div>
-<div class="nav"><button class="btn ghost" onclick="go(1)">পেছনে</button> <button class="btn" onclick="go(3)" id="s2next" disabled style="opacity:.4">পরবর্তী</button></div>
+<div class="nav"><button class="btn ghost" onclick="go(1)">Back</button> <button class="btn" onclick="go(3)" id="s2next" disabled style="opacity:.4">Next</button></div>
 </div>
 <div id="s3" class="step">
-<div class="lbl">আপনার তথ্য</div>
-<div class="row2"><input id="nm" placeholder="নাম"><input id="ph" placeholder="মোবাইল নম্বর"></div>
+<div class="lbl">Your details</div>
+<div class="row2"><input id="nm" placeholder="Name"><input id="ph" placeholder="Mobile number"></div>
 <div class="lbl" style="margin-top:12px"></div>
-<textarea id="rq" placeholder="বিশেষ অনুরোধ (ঐচ্ছিক): কী খাবেন, কত প্যাকেট, কোন ঠিকানা…"></textarea>
+<textarea id="rq" placeholder="Special requests (optional): what you'd like, how many packs, delivery address…"></textarea>
 <div class="recap" id="recap"></div>
-<div class="nav"><button class="btn ghost" onclick="go(2)">পেছনে</button> <button class="btn" onclick="finish()">নিশ্চিত করুন</button></div>
-<div class="note">ডেমো বুকিং — এখানে নমুনা ডেটা ব্যবহার হচ্ছে, দোকানের আসল সিস্টেম নয়।</div>
+<div class="nav"><button class="btn ghost" onclick="go(2)">Back</button> <button class="btn" onclick="finish()">Confirm</button></div>
+<div class="note">Demo booking &mdash; sample data only, not the restaurant's live system.</div>
 </div>
 <div id="s4" class="step done">
 <div class="ok">✓</div>
-<h2>নিশ্চিত হয়েছে</h2>
+<h2>Confirmed</h2>
 <p id="dn" style="color:#2a1a12"></p>
 <div class="code" id="cd"></div>
-<p class="small">কনফার্মেশন SMS পাঠানো হয়েছে। দেরি হলে কল করুন ০১৭০০-০০০০০০ — টেবিল ১৫ মিনিট ধরে রাখা হয়।</p>
+<p class="small">A confirmation SMS has been sent. Running late? Call 01700-000000 &mdash; tables are held for 15 minutes.</p>
 </div>
 </div>
 <script>
-const bn=s=>String(s).replace(/\d/g,d=>'০১২৩৪৫৬৭৮৯'[d]);
 const el=id=>document.getElementById(id);
-let st={mode:'টেবিল বুক',p:2,d:null,t:null};
+let st={mode:'Book a table',p:2,d:null,t:null};
 function go(n){for(let i=1;i<=4;i++)el('s'+i).classList.remove('on');el('s'+n).classList.add('on');if(n==2)renderSlots();if(n==3)recap()}
 document.querySelectorAll('#mode .chip').forEach(c=>c.onclick=()=>{document.querySelectorAll('#mode .chip').forEach(x=>x.classList.remove('sel'));c.classList.add('sel');st.mode=c.dataset.v});
-for(let p=1;p<=10;p++){const c=document.createElement('div');c.className='chip'+(p==2?' sel':'');c.textContent=bn(p);c.onclick=()=>{document.querySelectorAll('#party .chip').forEach(x=>x.classList.remove('sel'));c.classList.add('sel');st.p=p};el('party').appendChild(c)}
+for(let p=1;p<=10;p++){const c=document.createElement('div');c.className='chip'+(p==2?' sel':'');c.textContent=p;c.onclick=()=>{document.querySelectorAll('#party .chip').forEach(x=>x.classList.remove('sel'));c.classList.add('sel');st.p=p};el('party').appendChild(c)}
 el('date').min=new Date().toISOString().slice(0,10);
 el('date').onchange=()=>st.d=el('date').value;
 function isFull(d,t){const seed=[...d].reduce((a,c)=>a+c.charCodeAt(0),0)+t.length;return (seed*7+t.charCodeAt(0))%9<1.5}
-function renderSlots(){const w=new Date((st.d||new Date().toISOString().slice(0,10))+'T12:00:00').getDay();let start=11,end=21.5;if(w==5){start=15;end=22.5}el('slots').innerHTML='';el('s2next').disabled=true;el('s2next').style.opacity=.4;for(let h=start;h<=end;h+=1.5){const hh=Math.floor(h),mm=h%1?'৩০':'০০';const t=bn((hh>12?hh-12:hh)+':'+(h%1?'30':'00'))+(hh<12?' সকাল':(hh<16?' দুপুর':(hh<19?' বিকেল':' রাত')));const f=isFull(st.d,String(hh));const c=document.createElement('div');c.className='chip'+(f?' full':'');c.textContent=t;if(!f)c.onclick=()=>{document.querySelectorAll('#slots .chip').forEach(x=>x.classList.remove('sel'));c.classList.add('sel');st.t=t;el('s2next').disabled=false;el('s2next').style.opacity=1};el('slots').appendChild(c)}}
-function recap(){const d=new Date(st.d+'T12:00:00');const days=['রবিবার','সোমবার','মঙ্গলবার','বুধবার','বৃহস্পতিবার','শুক্রবার','শনিবার'];el('recap').innerHTML='<b>'+st.mode+'</b>'+(st.mode=='টেবিল বুক'?' · <b>'+bn(st.p)+' জন</b>':'')+' · '+days[d.getDay()]+' · <b>'+st.t+'</b>'}
-function finish(){const n=el('nm').value.trim(),p=el('ph').value.trim();if(!n||!p){alert('নাম আর মোবাইল নম্বর দিন, তাহলে কনফার্ম করা যাবে।');return}const d=new Date(st.d+'T12:00:00');const days=['রবিবার','সোমবার','মঙ্গলবার','বুধবার','বৃহস্পতিবার','শুক্রবার','শনিবার'];const cd='PBH-'+Math.random().toString(36).slice(2,6).toUpperCase();el('dn').textContent=n+(st.mode=='টেবিল বুক'?', টেবিলে '+bn(st.p)+' জন':'')+' — '+days[d.getDay()]+', '+st.t;el('cd').textContent=cd;go(4)}
+function label(h){const hh=h>12?h-12:h;const mm=h%1?':30':':00';const ap=h<12?'AM':'PM';return hh+mm+' '+ap}
+function renderSlots(){const w=new Date((st.d||new Date().toISOString().slice(0,10))+'T12:00:00').getDay();let start=11,end=21.5;if(w==5){start=15;end=22.5}el('slots').innerHTML='';el('s2next').disabled=true;el('s2next').style.opacity=.4;for(let h=start;h<=end;h+=1.5){const t=label(h);const f=isFull(st.d,String(Math.floor(h)));const c=document.createElement('div');c.className='chip'+(f?' full':'');c.textContent=t;if(!f)c.onclick=()=>{document.querySelectorAll('#slots .chip').forEach(x=>x.classList.remove('sel'));c.classList.add('sel');st.t=t;el('s2next').disabled=false;el('s2next').style.opacity=1};el('slots').appendChild(c)}}
+function recap(){const d=new Date(st.d+'T12:00:00');const days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];el('recap').innerHTML='<b>'+st.mode+'</b>'+(st.mode=='Book a table'?' &middot; <b>'+st.p+' guests</b>':'')+' &middot; '+days[d.getDay()]+' &middot; <b>'+st.t+'</b>'}
+function finish(){const n=el('nm').value.trim(),p=el('ph').value.trim();if(!n||!p){alert('Please add your name and mobile number to confirm.');return}const d=new Date(st.d+'T12:00:00');const days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];const cd='PBH-'+Math.random().toString(36).slice(2,6).toUpperCase();el('dn').textContent=n+(st.mode=='Book a table'?', table for '+st.p:'')+' — '+days[d.getDay()]+', '+st.t;el('cd').textContent=cd;go(4)}
 </script>
 </body>
 </html>
