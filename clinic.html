@@ -7,51 +7,89 @@
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap");
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Hind Siliguri',sans-serif;color:#222}
-
-.hero{background:linear-gradient(135deg,#0b5563,#12888f);color:#fff;padding:60px 24px;text-align:center}
-.hero h1{font-size:1.9rem;margin-bottom:8px}
-.hero p{opacity:.9;margin-bottom:24px}
-.btn{display:inline-block;background:#fff;color:#0b5563;padding:12px 28px;border-radius:30px;font-weight:700;text-decoration:none}
-section{max-width:880px;margin:0 auto;padding:40px 24px}
-h2{font-size:1.3rem;margin-bottom:20px;color:#0b5563}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
-.card{background:#eef6f7;border-radius:12px;padding:18px}
-.card h3{font-size:1.02rem;margin-bottom:6px}
+body{font-family:'Hind Siliguri',sans-serif;color:#173035;line-height:1.7;background:#f4fbfb}
+.hero{background:linear-gradient(135deg,#0b5563,#12888f);color:#fff;padding:80px 24px 60px;text-align:center}
+.hero .tag{letter-spacing:2px;font-size:.8rem;opacity:.85;text-transform:uppercase}
+.hero h1{font-size:2.1rem;margin:8px 0 6px}
+.hero p{opacity:.92;max-width:520px;margin:0 auto 26px}
+.btn{display:inline-block;background:#fff;color:#0b5563;padding:12px 30px;border-radius:30px;font-weight:700;text-decoration:none;margin:4px}
+.btn.line{background:transparent;border:2px solid #fff;color:#fff}
+section{max-width:920px;margin:0 auto;padding:48px 24px}
+h2{font-size:1.4rem;margin-bottom:8px;color:#0b5563}
+.sub{color:#5b8b91;font-size:.92rem;margin-bottom:26px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.card{background:#fff;border:1px solid #cfe7e9;border-radius:14px;padding:18px}
+.card h3{font-size:1.05rem;margin-bottom:4px}
 .card .price{color:#12888f;font-weight:700}
-.card p{font-size:.88rem;color:#555}
+.card p{font-size:.88rem;color:#5b7176}
+.doc{text-align:center;max-width:660px;margin:0 auto;background:#fff;border:1px solid #cfe7e9;border-radius:16px;padding:28px 24px}
+.doc h3{color:#0b5563;font-size:1.2rem}
+.doc p{color:#4f6b70;font-size:.95rem}
+.feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.feat div{background:#fff;border:1px solid #cfe7e9;border-radius:14px;padding:20px}
+.feat b{color:#0b5563;display:block;margin-bottom:4px}
+.feat p{font-size:.9rem;color:#4f6b70}
 .info{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-.info div{background:#eef6f7;border-radius:12px;padding:18px;font-size:.95rem}
-footer{background:#08262b;color:#eee;text-align:center;padding:28px 20px;font-size:.9rem}
+.info div{background:#fff;border:1px solid #cfe7e9;border-radius:14px;padding:20px;font-size:.95rem}
+.cta{background:#0b5563;color:#fff;text-align:center;border-radius:16px;padding:44px 24px;max-width:920px;margin:0 auto 48px}
+.cta p{opacity:.9;margin-bottom:20px}
+footer{background:#08262b;color:#eee;text-align:center;padding:30px 20px;font-size:.9rem}
 footer a{color:#8fd3d8}
-
+@media(max-width:520px){.hero h1{font-size:1.65rem}}
 </style>
 </head>
 <body>
-
 <div class="hero">
+  <div class="tag">ধানমন্ডির আধুনিক ডেন্টাল চেম্বার</div>
   <h1>সুনীতি ডেন্টাল কেয়ার</h1>
-  <p>নিখুঁত চিকিৎসা, আরামদায়ক পরিবেশ</p>
-  <a class="btn" href="tel:+8801700000000">সিরিয়াল নিতে কল করুন</a>
+  <p>নিখুঁত চিকিৎসা, আরামদায়ক পরিবেশ। অনলাইনে সিরিয়াল নিন — লাইনে দাঁড়াতে হবে না।</p>
+  <a class="btn" href="clinic-book.html">অনলাইনে সিরিয়াল নিন</a>
+  <a class="btn line" href="tel:+8801700000000">কল করুন: ০১৭০০-০০০০০০</a>
 </div>
 <section>
+  <h2>ডাক্তার</h2>
+  <div class="doc">
+    <h3>ডা. সুনীতি আহমেদ</h3>
+    <p>BDS (ঢাকা ডেন্টাল কলেজ) · FCPS (কনজারভেটিভ ডেন্টিস্ট্রি ও এন্ডোডন্টিক্স)</p>
+    <p>১২ বছরের অভিজ্ঞতা — রুট ক্যানেল, কসমেটিক ডেন্টিস্ট্রি ও শিশুদন্ত চিকিৎসায় বিশেষভাবে প্রশিক্ষিত। প্রতি রোগীর জন্য সময় নিয়ে চিকিৎসা, কোনো অতিরিক্ত চার্জ ছাড়া ফলো-আপ।</p>
+  </div>
+</section>
+<section>
   <h2>সেবা ও মূল্য</h2>
+  <p class="sub">সব দাম টাকায় · চেকআপের পর আগে দাম জানিয়ে তারপর চিকিৎসা</p>
   <div class="grid">
-    <div class="card"><h3>স্কেলিং ও পলিশ</h3><p>দাঁতের দাগ ও পাথর দূর</p><div class="price">১,২০০ টাকা</div></div>
-    <div class="card"><h3>ফিলিং</h3><p>সুতা/কম্পোজিট, এক সিটে শেষ</p><div class="price">৮০০–২,৫০০ টাকা</div></div>
-    <div class="card"><h3>রুট ক্যানেল</h3><p>ব্যথামুক্ত আধুনিক পদ্ধতি</p><div class="price">৩,৫০০ টাকা থেকে</div></div>
+    <div class="card"><h3>ডেন্টাল চেকআপ</h3><p>পরীক্ষা ও পরামর্শ</p><div class="price">৩০০</div></div>
+    <div class="card"><h3>স্কেলিং ও পলিশ</h3><p>দাঁতের দাগ ও পাথর দূর</p><div class="price">১,২০০</div></div>
+    <div class="card"><h3>ফিলিং</h3><p>সুতা/কম্পোজিট, এক সিটে শেষ</p><div class="price">৮০০–২,৫০০</div></div>
+    <div class="card"><h3>রুট ক্যানেল</h3><p>ব্যথামুক্ত আধুনিক পদ্ধতি, রোটারি ফাইল</p><div class="price">৩,৫০০ থেকে</div></div>
+    <div class="card"><h3>টুথ এক্সট্র্যাকশন</h3><p>সাধারণ ও সার্জিক্যাল</p><div class="price">৫০০–১,৫০০</div></div>
+    <div class="card"><h3>ক্রাউন ও ব্রিজ</h3><p>জিরকোনিয়া ও পোরসেলিন</p><div class="price">৪,০০০ থেকে</div></div>
     <div class="card"><h3>ব্রেসেস</h3><p>মেটাল ও সিরামিক দুই ধরনের</p><div class="price">মাসিক কিস্তিতে</div></div>
+    <div class="card"><h3>হোয়াইটেনিং</h3><p>এক সিটে অফিস ব্লিচিং</p><div class="price">৫,০০০</div></div>
+  </div>
+</section>
+<section>
+  <h2>কেন সুনীতি ডেন্টাল কেয়ার</h2>
+  <div class="feat">
+    <div><b>ব্যথামুক্ত চিকিৎসা</b><p>আধুনিক অ্যানেস্থেসিয়া পদ্ধতিতে ইনজেকশনও টের পাওয়া যায় না</p></div>
+    <div><b>পূর্ণ স্টেরাইলাইজেশন</b><p>প্রতি রোগীর পরে অটোক্লেভে যন্ত্রপাতি জীবাণুমুক্ত</p></div>
+    <div><b>নির্দিষ্ট সময়ে সিরিয়াল</b><p>অনলাইনে সিরিয়াল নিলে ওয়েটিং নেই, ঠিক সময়ে ডাকা হয়</p></div>
+    <div><b>ফলো-আপ ফ্রি</b><p>চিকিৎসা শেষে ৩ মাস পর্যন্ত ফলো-আপ ভিজিটে কোনো চার্জ নেই</p></div>
   </div>
 </section>
 <section>
   <h2>চেম্বারের তথ্য</h2>
   <div class="info">
-    <div><b>সময়</b><br>শনি–বুধ: বিকেল ৪টা – রাত ৯টা</div>
+    <div><b>সময়</b><br>শনি–বুধ: বিকেল ৪টা – রাত ৯টা<br>বৃহস্পতি ও শুক্রবার বন্ধ</div>
     <div><b>ঠিকানা</b><br>লেভেল ৩, রূপায়ন টাওয়ার, ধানমন্ডি ২৭, ঢাকা</div>
     <div><b>ইমার্জেন্সি</b><br>রাত ১২টা পর্যন্ত হোয়াটসঅ্যাপে যোগাযোগ</div>
   </div>
 </section>
+<div class="cta">
+  <h2 style="color:#fff">দাঁতের সমস্যা পেছনে ফেলে রাখবেন না</h2>
+  <p>আজই সিরিয়াল নিন — অনলাইনে, কয়েক সেকেন্ডে।</p>
+  <a class="btn" href="clinic-book.html">অনলাইনে সিরিয়াল নিন</a>
+</div>
 <footer>এই সাইটটি একটি ডেমো — আপনার চেম্বারের জন্যও এমন ওয়েবসাইট বানিয়ে দেওয়া হয়<br>যোগাযোগ: <a href="https://t.me/johnconstantine570">Telegram @johnconstantine570</a></footer>
-
 </body>
 </html>
