@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<title>Wharf One Food &amp; Wine — Restaurant Site Concept</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;background:#171010;color:#f0e6dd;line-height:1.65}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+.hero{min-height:80vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:linear-gradient(rgba(18,8,8,.68),rgba(18,8,8,.88)),url('https://lh3.googleusercontent.com/grass-cs/AABkmLfpPT0nPjC3p5DF5hEwfV2d0CxRsEUsg_AAS25b-4f9Fee_UX_JsfwLhfanWYOiBRpwiuMjW2_keIwktHHM8tFPpT49wcRfLfUg8qLe1K7r-n0ILoxCI0K3dlI8Gcm3Gu3QSJ-q=s4800-w1024-h1600') center/cover;padding:60px 20px}
+.hero .eyebrow{color:#e0946b;letter-spacing:3px;text-transform:uppercase;font-size:.75rem;margin-bottom:14px}
+.hero h1{font-size:2.7rem;color:#fff;font-family:Georgia,serif;margin-bottom:10px}
+.hero p{color:#e8dcd2;max-width:560px;margin-bottom:28px}
+.btn{display:inline-block;background:#e0946b;color:#241009;font-weight:700;text-decoration:none;padding:13px 30px;border-radius:6px;margin:0 6px 10px}
+.btn.ghost{background:transparent;border:1px solid #e0946b;color:#e0946b}
+section{padding:56px 0;border-top:1px solid #2c1e18}
+h2{text-align:center;font-family:Georgia,serif;color:#fff;font-size:1.7rem;margin-bottom:14px}
+.sub{text-align:center;color:#a3897c;font-size:.9rem;margin-bottom:34px}
+.about{text-align:center;max-width:660px;margin:0 auto}
+.about p{color:#d3c3b8}
+.mrow{max-width:760px;margin:0 auto 12px}
+.mrow h3{color:#e0946b;font-size:.85rem;text-transform:uppercase;letter-spacing:2px;text-align:center;margin:30px 0 14px}
+.mi{display:flex;align-items:baseline;padding:7px 0;border-bottom:1px dotted #3a2a22}
+.mi .n{color:#f0e6dd;font-weight:600;font-size:.95rem}
+.mi .d{color:#a3897c;font-size:.82rem;width:100%;padding-top:2px}
+.mi .p{color:#e0946b;font-weight:700;margin-left:auto;white-space:nowrap;padding-left:14px}
+.mi .wrap-left{max-width:75%}
+.menu-note{text-align:center;color:#877065;font-size:.8rem;margin-top:30px;font-style:italic}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.gallery img{width:100%;height:230px;object-fit:cover;border-radius:10px;display:block}
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.box{background:#221612;border:1px solid #3a2a22;border-radius:10px;padding:26px}
+.box h3{color:#e0946b;font-size:.8rem;text-transform:uppercase;letter-spacing:2px;margin-bottom:12px}
+.box p,.box li{color:#e8dcd2;font-size:.93rem}
+.box ul{list-style:none}
+.box li{padding:3px 0}
+.cta-band{text-align:center;padding:50px 20px;background:#221612;border-radius:12px;margin:0 20px}
+.cta-band p{color:#d3c3b8;margin-bottom:22px}
+.foot{text-align:center;color:#877065;font-size:.8rem;padding:36px 20px 50px;border-top:1px solid #2c1e18}
+.foot strong{color:#e0946b}
+@media(max-width:560px){.hero h1{font-size:1.95rem}}
+
+/* polish pass: Inter + refined details */
+body{font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.hero h1,.top h1,h2,.cta-band h2{font-family:'Inter',sans-serif;font-weight:900;letter-spacing:-.02em}
+.hero h1{font-size:clamp(2.1rem,6vw,3.2rem)}
+h2{font-size:1.9rem}
+.btn{border-radius:999px;padding:14px 32px;transition:transform .15s ease,box-shadow .15s ease,background .15s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(0,0,0,.38)}
+.btn.ghost:hover{background:rgba(255,255,255,.06)}
+.box,.card{box-shadow:0 8px 30px rgba(0,0,0,.22)}
+section{scroll-margin-top:24px}
+::selection{background:rgba(211,164,74,.35)}
+</style>
+</head>
+<body>
+<div class="hero">
+<div class="eyebrow">Wood Grill · Darwin Waterfront · Open 7 Days</div>
+<h1>Wharf One Food &amp; Wine</h1>
+<p>Right on the edge of the Waterfront Lagoon — wood-grilled seafood and steaks, share plates and house-made pasta with the lagoon for a view.</p>
+<a class="btn" href="wharfone-book.html">Book a table</a>
+<a class="btn ghost" href="tel:+61889410033">(08) 8941 0033</a>
+</div>
+<section class="wrap">
+<h2>Casual enough for a drink, special enough for a party</h2>
+<div class="about"><p>Wharf One sits on the Waterfront's edge, serving wood-grilled flavours and fresh local produce from midday every day. Happy hour kicks off at 4pm, dinner service from 5pm, and there's easy bill splitting and tap-to-pay for groups. Birthdays, weddings, corporate nights — functions come with no venue hire fee.</p></div>
+</section>
+<section class="wrap">
+<h2>The menu</h2>
+<p class="sub">Prices in AUD · from Wharf One's current lunch and dinner menus (Oct 2026)</p>
+<div class="mrow">
+<h3>Small plates</h3>
+<div class="mi"><div class="wrap-left"><div class="n">SA Oysters</div><div class="d">Natural 20 · kilpatrick with crispy bacon 26</div></div><div class="p">20+</div></div>
+<div class="mi"><div class="wrap-left"><div class="n">Oven Baked Prawns</div><div class="d">Aromatic yum yum sauce &amp; vibrant salsa verde</div></div><div class="p">22</div></div>
+<div class="mi"><div class="wrap-left"><div class="n">Oven Baked Brie</div><div class="d">Warm brie with honey, toasted walnuts &amp; crostinis</div></div><div class="p">24</div></div>
+<div class="mi"><div class="wrap-left"><div class="n">Lime Pepper Calamari</div><div class="d">Szechuan salt, rocket &amp; tartare sauce</div></div><div class="p">26</div></div>
+<div class="mi"><div class="wrap-left"><div class="n">Yellow Fin Tuna</div><div class="d">Citrus-cured, wakame, sesame, wasabi mayo, carrot chips</div></div><div class="p">25</div></div>
+<div class="mi"><div class="wrap-left"><div class="n">Antipasti Board <span style="color:#877065;font-size:.75rem">for two</span></div><div class="d">Hummus, olives, cured meats, cheese, pickles, crostini</div></div><div class="p">37</div></div>
+<div class="mi"><div class="wrap-left"><div class="n">Kangaroo Tataki</div><div class="d">Seared thin, kewpie, soy, sesame, Asian slaw</div></div><div class="p">24</div></div>
+</div>
+<div class="mrow">
+<h3>Wood grill &amp; mains</h3>
+<div class="mi"><div class="wrap-left"><div class="n">300g Scotch Fillet / 300g Sirloin</div><div class="d">100-day grain-fed beef, wood-grilled, roasted pumpkin, sauce of choice</div></div><div class="p">52+</div></div>
+<div class="mi"><div class="wrap-left"><div class="n">Humpty Doo Barramundi</div><div class="d">Crispy-skin local barra, sweet potato &amp; lemon myrtle purée, bush dukkah</div></div><div class="p">45</div></div>
+<div class="mi"><div class="wrap-left"><div class="n">Confit Duck</div><div class="d">Rocket mash, red wine-poached pear, red wine jus</div></div><div class="p">42</div></div>
+<div class="mi"><div class="wrap-left"><div class="n">BBQ Beef Brisket</div><div class="d">Slow-cooked, sweetcorn purée, salsa verde, potato sticks</div></div><div class="p">40</div></div>
+<div class="mi"><div class="wrap-left"><div class="n">Prawn Tagliatelle / Vegetarian Rigatoni</div><div class="d">House-made pasta — tomato &amp; Pernod broth · puttanesca-style</div></div><div class="p">32+</div></div>
+<div class="mi"><div class="wrap-left"><div class="n">Market Fish of the Day</div><div class="d">Whole baby NT fish, crying tiger sauce, paw paw salad</div></div><div class="p">48</div></div>
+<div class="mi"><div class="wrap-left"><div class="n">Fish &amp; Chips / Wharf One Burger / Chicken Schnitzel / Caesar</div><div class="d">Everyday favourites, 28 to 35</div></div><div class="p">28+</div></div>
+</div>
+<div class="mrow">
+<h3>Sides &amp; feasts</h3>
+<div class="mi"><div class="wrap-left"><div class="n">Seafood Feast Tower</div><div class="d">Tower for two — the ocean on one table</div></div><div class="p">170</div></div>
+<div class="mi"><div class="wrap-left"><div class="n">Bottomless Lunch <span style="color:#877065;font-size:.75rem">1–3pm, pre-booked</span></div><div class="d">Dip &amp; flatbread, calamari, fish &amp; chips + flowing drinks · min 2</div></div><div class="p">72pp</div></div>
+<div class="mi"><div class="wrap-left"><div class="n">Fries / Crispy Potato / Corn Ribs / Garden Salad</div><div class="d">Truffle mayo +$4 · 11 to 14</div></div><div class="p">11+</div></div>
+</div>
+<p class="menu-note">Sauce upgrades $5 where not included · vegetarian, gluten-free and kids menus available</p>
+</section>
+<section class="wrap">
+<h2>At the waterfront</h2>
+<div class="gallery">
+<img src="https://lh3.googleusercontent.com/grass-cs/AABkmLfpPT0nPjC3p5DF5hEwfV2d0CxRsEUsg_AAS25b-4f9Fee_UX_JsfwLhfanWYOiBRpwiuMjW2_keIwktHHM8tFPpT49wcRfLfUg8qLe1K7r-n0ILoxCI0K3dlI8Gcm3Gu3QSJ-q=s4800-w1024-h1600" alt="Seafood platter on the waterfront terrace">
+<img src="https://lh3.googleusercontent.com/grass-cs/AABkmLfFAs2n04pOXjYiIb5yorcmtSPj0KMetsfq0i9VHL11a1QjncNfpCLuAITXo-YgP616KldmKogv9u91bosnnabKCvB8NNg8uzU3p58jiZGoRmvD5POvuO6jm1h25eCwbSD_HLDr5pbjMwhH=s4800-w1024-h1600" alt="Wharf One at night">
+<img src="https://lh3.googleusercontent.com/grass-cs/AABkmLdGHQelVi71ZhZMms7RZ_bBId_SJxwDPEMqKu1nNYZSCYChEoV0uYjTcF6wNZ5VsQqRssihpeWe_pmi5GZewHygqRuYh6MYQ1-VB3CblWI5edjtITWMUUweFgtjwcxn7bl0BIXnHLUDq-A=s4800-w1024-h900" alt="Plated dish at Wharf One">
+</div>
+</section>
+<section class="wrap">
+<div class="info">
+<div class="box"><h3>Hours</h3><ul><li>Mon–Sun · 12:00–9:00 PM</li><li>Happy hour from 4 PM · dinner from 5 PM</li></ul></div>
+<div class="box"><h3>Find us</h3><p>F3A/19 Kitchener Drive<br>Darwin Waterfront NT 0800<br>(08) 8941 0033<br>functions@wharfone.com.au</p></div>
+<div class="box"><h3>Functions</h3><p>Groups 20+, breakfast-to-dinner packages, no venue hire fee. Weddings with the lagoon as the backdrop.</p></div>
+</div>
+</section>
+<div class="wrap"><div class="cta-band"><h2 style="margin-bottom:10px">The lagoon's waiting</h2><p>Lunch, happy hour or dinner — grab your table.</p><a class="btn" href="wharfone-book.html">Book a table</a></div></div>
+<div class="foot"><p><strong>Concept preview</strong> built on Wharf One's real menus, hours, photos and booking details — not their live site. Prepared by K. Hasan · Telegram @johnconstantine570 · <a style="color:#e0946b" href="https://yashhasan570.github.io/web-demo/portfolio.html">More work</a></p></div>
+</body>
+</html>
