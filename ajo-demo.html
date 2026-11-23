@@ -1,0 +1,47 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ajo Idea Space — Website Concept</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#f0f0f0;line-height:1.55;background:#0b0b10}
+.hero{min-height:58vh;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(135deg,#123a4f 0%,#2a4a5e 100%);position:relative;overflow:hidden}
+.hero:before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 70% 20%,rgba(255,255,255,.14),transparent 45%),radial-gradient(circle at 20% 80%,rgba(0,0,0,.35),transparent 50%)}
+.hero-in{position:relative;padding:60px 24px}
+.badge{display:inline-block;font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:5px 10px;border:1px solid rgba(255,255,255,.5);border-radius:99px;margin-bottom:16px;color:#fff}
+h1{font-size:clamp(36px,7vw,60px);font-weight:800;color:#fff;letter-spacing:-1px}
+.tag{font-size:17px;color:rgba(255,255,255,.92);margin-top:10px;max-width:520px;margin-left:auto;margin-right:auto}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:20px}
+.chip{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);padding:6px 13px;border-radius:99px;font-size:13px;color:#fff}
+section{max-width:860px;margin:0 auto;padding:42px 24px 6px}
+h2{font-size:13px;letter-spacing:3px;text-transform:uppercase;color:#7dd3fc;margin-bottom:18px;font-weight:700}
+.about{font-size:16.5px;color:#c9c9d4;max-width:640px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin-top:8px}
+.card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:18px}
+.card h4{font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#7dd3fc;margin-bottom:7px}
+.card p,.card a{font-size:14.5px;color:#e6e6ec;text-decoration:none}
+.card a{color:#7dd3fc}
+.form{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:22px;max-width:620px}
+.form label{display:block;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#9aa;margin:12px 0 5px}
+.form input,.form select{width:100%;padding:11px 12px;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.18);border-radius:9px;color:#fff;font-size:14px}
+.btn{margin-top:18px;width:100%;padding:13px;background:#7dd3fc;color:#101010;font-weight:700;border:0;border-radius:10px;font-size:15px;cursor:pointer}
+.note{font-size:12px;color:#8a8;margin-top:12px}
+footer{max-width:860px;margin:0 auto;padding:36px 24px 60px;font-size:13px;color:#778;border-top:1px solid rgba(255,255,255,.08);margin-top:42px}
+footer b{color:#99a}
+</style></head><body>
+<div class="hero"><div class="hero-in"><span class="badge">Concept preview</span>
+<h1>Ajo Idea Space</h1><p class="tag">Uttara's fast-casual dining space where food meets artistic expression</p>
+<div class="chips"><span class="chip"><b>4.3</b> Google · 3,679 reviews</span><span class="chip">Asian fusion</span><span class="chip">Uttara, Dhaka</span></div></div></div>
+<section><h2>About</h2><p class="about">Ajo Idea Space is a fast-casual restaurant in Uttara built around the idea of artistic expression - a bright, social space for fusion plates, seafood soup, handcrafted coffee and long conversations.</p></section>
+<section><h2>Visit us</h2><div class="grid"></div></section>
+<section><h2>Plan a visit</h2>
+<form class="form" onsubmit="return show(event)">
+<div class="grid" style="gap:0"><div style="padding-right:6px"><label>Your name</label><input required placeholder="Full name"></div>
+<div><label>Phone</label><input required placeholder="01XXX-XXXXXX"></div></div>
+<div class="grid" style="gap:0;margin-top:4px"><div style="padding-right:6px"><label>Date</label><input type="date" required></div>
+<div><label>Time</label><input type="time" required></div></div>
+<label>Guests</label><select><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8+</option></select>
+<button class="btn" type="submit">Request reservation</button>
+<p class="note">Concept preview: on the live site, reservation requests reach Ajo Idea Space instantly.</p></form></section>
+<footer><b>Ajo Idea Space · 14/A, Road 2, Sector 13, Uttara, Dhaka 1230</b><br>Phone 01613-161616 · Open daily 11:00 AM - 11:00 PM · <a style='color:#7dd3fc' href='https://facebook.com/AjoIdeaSpace/'>Facebook</a> · <a style='color:#7dd3fc' href='https://www.google.com/maps/search/?api=1&query=Ajo+Idea+Space%2C+14%2FA%2C+Road+No.+2%2C+Dhaka+1230%2C+Bangladesh&query_place_id=ChIJd-PUjRfEVTcRFgURydrkq4Y'>Google Maps</a><br><br>This is a website concept built for Ajo Idea Space from public listing details. Preview by Md. Khalid Hasan, freelance web designer.</footer>
+<script>function show(e){e.preventDefault();document.querySelector('.note').textContent='Thanks! Concept demo only - on the live site this reaches '+document.title.split(' — ')[0]+' directly.';return false}</script>
+</body></html>
