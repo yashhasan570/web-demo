@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOSH Dhanmondi — Pan-Asian Kitchen in Dhaka</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#0f0f0f;color:#f5f5f5;line-height:1.6}
+a{color:inherit;text-decoration:none}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:14px 5vw;background:rgba(15,15,15,.85);backdrop-filter:blur(10px);border-bottom:1px solid #222}
+nav .logo{font-weight:800;font-size:1.3rem;letter-spacing:.2em}
+nav .logo span{color:#e8b64c}
+nav .links a{margin-left:22px;font-size:.9rem;color:#bbb;font-weight:500}
+nav .links a:hover{color:#fff}
+.hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;padding:0 5vw 64px}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.45) saturate(.9)}
+.hero .inner{position:relative;max-width:720px}
+.kicker{display:inline-block;background:#e8b64c;color:#111;font-weight:700;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;padding:6px 14px;border-radius:999px;margin-bottom:18px}
+h1{font-size:clamp(2.6rem,7vw,4.6rem);font-weight:800;line-height:1.05;letter-spacing:-.02em}
+.hero p{margin-top:16px;color:#ddd;font-size:1.1rem;max-width:540px}
+.cta-row{margin-top:28px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 28px;border-radius:999px;font-weight:700;font-size:.95rem;transition:.2s}
+.btn-gold{background:#e8b64c;color:#111}
+.btn-gold:hover{background:#f5c65e}
+.btn-ghost{border:1px solid rgba(255,255,255,.4);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.stats{display:flex;gap:36px;padding:26px 5vw;border-bottom:1px solid #1d1d1d;flex-wrap:wrap}
+.stat b{font-size:1.35rem} .stat span{display:block;color:#888;font-size:.85rem}
+.wrap{padding:64px 5vw}
+h2{font-size:1.9rem;font-weight:800;margin-bottom:28px;letter-spacing:-.01em}
+.menu-cat{margin-bottom:44px}
+.menu-cat h2{font-size:1.25rem;color:#e8b64c;border-bottom:1px solid #262626;padding-bottom:10px;margin-bottom:6px}
+.dish{display:flex;justify-content:space-between;gap:18px;padding:13px 0;border-bottom:1px dashed #242424}
+.dish-name{font-weight:600;display:block}
+.dish-desc{color:#909090;font-size:.88rem;display:block}
+.dish-price{font-weight:700;color:#e8b64c;white-space:nowrap}
+.book{background:#161616;border-radius:24px;padding:44px;max-width:640px;margin:0 auto;border:1px solid #242424}
+.field{margin-bottom:16px} .field label{display:block;font-size:.8rem;color:#999;margin-bottom:6px;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+.field input,.field select{width:100%;padding:13px 16px;border-radius:12px;border:1px solid #333;background:#0f0f0f;color:#fff;font-size:1rem}
+.field input:focus,.field select:focus{outline:none;border-color:#e8b64c}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.confirm{display:none;margin-top:18px;background:#1c2a1c;border:1px solid #2e5c2e;color:#b8f5b8;padding:16px;border-radius:12px;font-size:.95rem}
+.mock-note{margin-top:16px;color:#777;font-size:.8rem;text-align:center}
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.card{background:#161616;border:1px solid #242424;border-radius:18px;padding:26px}
+.card h3{color:#e8b64c;font-size:1rem;margin-bottom:10px}
+.card p,.card a{color:#c9c9c9;font-size:.95rem}
+.card a:hover{color:#fff}
+footer{padding:36px 5vw;color:#666;font-size:.85rem;border-top:1px solid #1d1d1d;text-align:center}
+@media(max-width:640px){.grid2{grid-template-columns:1fr}.book{padding:26px}.stats{gap:20px}}
+</style>
+</head>
+<body>
+<nav><a class="logo" href="#">NOSH<span>.</span></a><div class="links"><a href="#menu">Menu</a><a href="#reserve">Reserve</a><a href="#visit">Visit</a></div></nav>
+<header class="hero">
+  <img class="bg" src="nosh-hero.jpg" alt="NOSH Dhanmondi">
+  <div class="inner">
+    <span class="kicker">Pan-Asian · Dhanmondi</span>
+    <h1>Poetry on Plate.</h1>
+    <p>NOSH Dhanmondi serves pan-Asian and Japanese favourites — hand-folded dimsum, fresh sushi rolls, wok-fired noodles and signature rice bowls — in the heart of Dhanmondi.</p>
+    <div class="cta-row">
+      <a class="btn btn-gold" href="#reserve">Reserve a table</a>
+      <a class="btn btn-ghost" href="https://www.foodpanda.com.bd/restaurant/bajg/nosh-dhanmondi" target="_blank">Order on foodpanda</a>
+    </div>
+  </div>
+</header>
+<div class="stats">
+  <div class="stat"><b>4.4★</b><span>Google · 376 reviews</span></div>
+  <div class="stat"><b>11 AM – 11 PM</b><span>Open every day</span></div>
+  <div class="stat"><b>Dine-in · Takeaway</b><span>House 32/A, Road 2, Dhanmondi</span></div>
+</div>
+<main class="wrap" id="menu">
+  <h2>The Menu</h2>
+  <section class="menu-cat" id="starters"><h2>Starters</h2><div class="dish"><div class="dish-info"><span class="dish-name">Chicken Yakitori</span><span class="dish-desc">4 pcs · grilled chicken skewer, soy glaze, scallion</span></div><span class="dish-price">৳572</span></div><div class="dish"><div class="dish-info"><span class="dish-name">Shrimp Tempura</span><span class="dish-desc">5 pcs · golden shrimp, tempura batter, dipping sauce</span></div><span class="dish-price">৳732</span></div><div class="dish"><div class="dish-info"><span class="dish-name">Korean Gochujang Wings</span><span class="dish-desc">4 pcs · sticky gochujang glaze, sesame</span></div><span class="dish-price">৳498</span></div><div class="dish"><div class="dish-info"><span class="dish-name">Bangkok Fried Chicken</span><span class="dish-desc">6 pcs · thai spice, garlic, coriander</span></div><span class="dish-price">৳649</span></div><div class="dish"><div class="dish-info"><span class="dish-name">Beef Tataki</span><span class="dish-desc">Seared beef, ponzu sauce, ginger</span></div><span class="dish-price">৳859</span></div></section><section class="menu-cat" id="soups"><h2>Soups & Salads</h2><div class="dish"><div class="dish-info"><span class="dish-name">Tom Yum Goong Gai</span><span class="dish-desc">Spicy shrimp & chicken, lemongrass, lime</span></div><span class="dish-price">৳398</span></div><div class="dish"><div class="dish-info"><span class="dish-name">Tom Kha Talay</span><span class="dish-desc">Creamy seafood, coconut milk, galangal</span></div><span class="dish-price">৳421</span></div><div class="dish"><div class="dish-info"><span class="dish-name">Som Tam Salad</span><span class="dish-desc">Green papaya, peanut, chili, lime</span></div><span class="dish-price">৳642</span></div><div class="dish"><div class="dish-info"><span class="dish-name">Shrimp & Mango Salad</span><span class="dish-desc">Tropical shrimp, ripe mango, lettuce</span></div><span class="dish-price">৳798</span></div></section><section class="menu-cat" id="noodles"><h2>Noodles & Dimsum</h2><div class="dish"><div class="dish-info"><span class="dish-name">Classic Pad Thai</span><span class="dish-desc">Rice noodle, peanut, egg, bean sprout</span></div><span class="dish-price">৳775</span></div><div class="dish"><div class="dish-info"><span class="dish-name">Lo Mein</span><span class="dish-desc">Egg noodle, vegetable, soy sauce</span></div><span class="dish-price">৳672</span></div><div class="dish"><div class="dish-info"><span class="dish-name">Mee Goreng</span><span class="dish-desc">Spicy noodle, shrimp, chicken, tomato</span></div><span class="dish-price">৳683</span></div><div class="dish"><div class="dish-info"><span class="dish-name">Shrimp Shumai</span><span class="dish-desc">5 pcs · steamed shrimp dumpling</span></div><span class="dish-price">৳677</span></div><div class="dish"><div class="dish-info"><span class="dish-name">Gyoza</span><span class="dish-desc">5 pcs · pan-fried chicken & vegetable</span></div><span class="dish-price">৳486</span></div><div class="dish"><div class="dish-info"><span class="dish-name">Spicy Beef Dumpling</span><span class="dish-desc">5 pcs · juicy beef, chili oil</span></div><span class="dish-price">৳552</span></div></section><section class="menu-cat" id="sushi"><h2>Sushi & Bao</h2><div class="dish"><div class="dish-info"><span class="dish-name">Nosh Nigiri Plate</span><span class="dish-desc">8 pcs · assorted seafood nigiri</span></div><span class="dish-price">৳1,599</span></div><div class="dish"><div class="dish-info"><span class="dish-name">Salmon Avocado Maki</span><span class="dish-desc">8 pcs · salmon, avocado, nori</span></div><span class="dish-price">৳767</span></div><div class="dish"><div class="dish-info"><span class="dish-name">California Maki</span><span class="dish-desc">8 pcs · crab stick, avocado, tobiko</span></div><span class="dish-price">৳752</span></div><div class="dish"><div class="dish-info"><span class="dish-name">Dragon Roll</span><span class="dish-desc">8 pcs · eel, avocado, cucumber</span></div><span class="dish-price">৳959</span></div><div class="dish"><div class="dish-info"><span class="dish-name">Spicy Gochujang Shrimp Bao</span><span class="dish-desc">2 pcs · fluffy steam bun, shrimp</span></div><span class="dish-price">৳568</span></div><div class="dish"><div class="dish-info"><span class="dish-name">Beef Bulgogi Bao</span><span class="dish-desc">2 pcs · savory beef bulgogi</span></div><span class="dish-price">৳549</span></div></section><section class="menu-cat" id="mains"><h2>Mains</h2><div class="dish"><div class="dish-info"><span class="dish-name">Kung Pao Chicken</span><span class="dish-desc">Peanut, dried chili, vegetable</span></div><span class="dish-price">৳682</span></div><div class="dish"><div class="dish-info"><span class="dish-name">Tori No Teriyaki</span><span class="dish-desc">Grilled chicken, teriyaki, sesame</span></div><span class="dish-price">৳678</span></div><div class="dish"><div class="dish-info"><span class="dish-name">Beef Bulgogi</span><span class="dish-desc">Soy sauce, sesame oil, garlic</span></div><span class="dish-price">৳843</span></div><div class="dish"><div class="dish-info"><span class="dish-name">Beef Mongolian</span><span class="dish-desc">Brown sauce, onion, scallion</span></div><span class="dish-price">৳823</span></div><div class="dish"><div class="dish-info"><span class="dish-name">Steamed Whole Koral Fish</span><span class="dish-desc">Chili, lime, garlic</span></div><span class="dish-price">৳1,592</span></div><div class="dish"><div class="dish-info"><span class="dish-name">Nosh Seafood Sambal</span><span class="dish-desc">Mixed seafood, sambal chili paste</span></div><span class="dish-price">৳969</span></div></section><section class="menu-cat" id="rice"><h2>Rice Bowls</h2><div class="dish"><div class="dish-info"><span class="dish-name">Teriyaki Rice Bowl</span><span class="dish-desc">Chicken teriyaki, steamed rice, sesame</span></div><span class="dish-price">৳697</span></div><div class="dish"><div class="dish-info"><span class="dish-name">Tom Yum Rice Bowl</span><span class="dish-desc">Tom yum fried rice, grill chicken</span></div><span class="dish-price">৳693</span></div><div class="dish"><div class="dish-info"><span class="dish-name">Chicken Katsu Rice Bowl</span><span class="dish-desc">Chicken katsu, egg, rice</span></div><span class="dish-price">৳694</span></div><div class="dish"><div class="dish-info"><span class="dish-name">Beef Basil Rice Bowl</span><span class="dish-desc">Minced beef, basil, fried egg</span></div><span class="dish-price">৳726</span></div></section><section class="menu-cat" id="dessert"><h2>Dessert & Drinks</h2><div class="dish"><div class="dish-info"><span class="dish-name">Mango Sticky Rice</span><span class="dish-desc">Thai sticky rice, imported mango, coconut milk</span></div><span class="dish-price">৳598</span></div><div class="dish"><div class="dish-info"><span class="dish-name">Nosh Coconut Ice Cream</span><span class="dish-desc">Coconut milk, cream</span></div><span class="dish-price">৳493</span></div><div class="dish"><div class="dish-info"><span class="dish-name">Coco Cream Lava</span><span class="dish-desc">Coconut cream cake, chocolate</span></div><span class="dish-price">৳426</span></div><div class="dish"><div class="dish-info"><span class="dish-name">Fresh Orange Juice</span><span class="dish-desc">Freshly squeezed</span></div><span class="dish-price">৳449</span></div></section>
+</main>
+<section class="wrap" id="reserve" style="padding-top:0">
+  <div class="book">
+    <h2 style="margin-top:0">Reserve a table</h2>
+    <form id="rform" onsubmit="return doBook(event)">
+      <div class="grid2">
+        <div class="field"><label>Full name</label><input id="rn" required placeholder="Your name"></div>
+        <div class="field"><label>Phone</label><input id="rp" required placeholder="01XXX-XXXXXX"></div>
+      </div>
+      <div class="grid2">
+        <div class="field"><label>Date</label><input id="rd" type="date" required></div>
+        <div class="field"><label>Guests</label><select id="rg"><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>8+</option></select></div>
+      </div>
+      <div class="field"><label>Time</label><select id="rt"><option>12:00 PM</option><option>1:00 PM</option><option>2:00 PM</option><option>6:00 PM</option><option>7:00 PM</option><option>8:00 PM</option><option>9:00 PM</option><option>10:00 PM</option></select></div>
+      <button class="btn btn-gold" style="width:100%" type="submit">Confirm reservation</button>
+      <div class="confirm" id="ok"></div>
+      <p class="mock-note">Concept preview — this shows how online table booking could work on NOSH's own website. The live system isn't connected yet.</p>
+    </form>
+  </div>
+</section>
+<section class="wrap" id="visit" style="padding-top:0">
+  <h2>Find us</h2>
+  <div class="info">
+    <div class="card"><h3>Address</h3><p>House 32/A, Road 2, Dhanmondi, Dhaka 1205</p></div>
+    <div class="card"><h3>Hours</h3><p>Every day · 11:00 AM – 11:00 PM</p></div>
+    <div class="card"><h3>Call / WhatsApp</h3><p><a href="tel:+8801805226696">+880 1805-226696</a></p></div>
+    <div class="card"><h3>Follow & order</h3><p><a href="https://www.facebook.com/noshdhanmondi/" target="_blank">Facebook</a><br><a href="https://www.instagram.com/noshdhanmondi/" target="_blank">Instagram</a><br><a href="https://www.foodpanda.com.bd/restaurant/bajg/nosh-dhanmondi" target="_blank">foodpanda delivery</a></p></div>
+  </div>
+</section>
+<footer>NOSH Dhanmondi · Pan-Asian kitchen, Dhanmondi, Dhaka</footer>
+<script>
+function doBook(e){e.preventDefault();
+  var code='NOSH-'+Math.floor(1000+Math.random()*9000);
+  var ok=document.getElementById('ok');
+  ok.style.display='block';
+  ok.textContent='Table held for '+document.getElementById('rn').value+' — '+document.getElementById('rd').value+' at '+document.getElementById('rt').value+' for '+document.getElementById('rg').value+' guests. Confirmation: '+code;
+  return false;}
+</script>
+</body>
+</html>
